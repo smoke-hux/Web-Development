@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(./images/smoke\ grenade.JPG);
+    background-size: inherit;
+    display: flex;
+}
+
+
+/* the body */
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    blur: 30px;
+    animation-duration: 2s;
+}
+
+
+/* header 2 */
+
+.box h2 {
+    margin: 0 0 30px;
+    padding: 0%;
+    color: bisque;
+    text-align: center;
+}
+
+
+/* input box */
+
+.box .inputBox {
+    position: relative;
+}
+
+
+/* input  */
+
+.box .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    padding: 2px solid #2ecc71;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label {
+    top: -16px;
+    left: 0;
+    color: blueviolet;
+    font-size: 12px;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #03a9f4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.box input[type="submit"]:hover~input {
+    left: 120%;
+}
