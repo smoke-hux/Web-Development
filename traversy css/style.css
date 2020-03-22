@@ -51,4 +51,24 @@ body {
     font-style: normal;
 }
 
-.categories ul
+.categories ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: royalblue;
+}
+
+a:active {
+    color: brown;
+}
+
+a:visited {
+    color: goldenrod;
+}
